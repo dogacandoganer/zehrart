@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080706">
+  <meta name="description" content="ZehrArt — modern kübist sanat, özgün eserler ve koleksiyoner deneyimi.">
+  <meta property="og:title" content="ZehrArt — Modern Cubist Living">
+  <meta property="og:description" content="Gerçeklik tek bir açıdan ibaret değildir.">
+  <title>ZehrArt — Modern Cubist Living</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080706'/><path d='M8 49 30 8l12 24 14-13v30H8z' fill='%23b86a32'/><path d='M19 49 42 15 56 49z' fill='%23edd1aa' fill-opacity='.7'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <noscript><style>#intro{display:none!important}</style></noscript>
+</head>
+<body>
+  <div class="signature-transition" id="signatureTransition" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-geometry" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="intro-mark">
+      <div class="intro-name"><span>Zehr</span><em>Art</em></div>
+      <div class="intro-rule"></div>
+      <small id="introLine">REALITY HAS MORE THAN ONE FACE</small>
+    </div>
+    <button class="intro-skip" id="introSkip" type="button">GEÇ ↗</button>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#top" aria-label="ZehrArt ana sayfa">
+      <strong data-brand>ZehrArt</strong>
+      <small data-tagline>MODERN CUBIST LIVING</small>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false"><i></i><i></i></button>
+    <nav class="nav" id="nav">
+      <a href="#top" class="active">Ana Sayfa</a>
+      <a href="#works">Eserler</a>
+      <a href="#atelier">Atölye</a>
+      <a href="#artist">Sanatçı</a>
+      <a href="#collections">Koleksiyonlar</a>
+      <a href="#exhibitions">Sergiler</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchOpen" aria-label="Eser ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button>
+      <a class="icon-btn admin-link" href="admin/" aria-label="Yönetim paneli"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20v-2.5A4.5 4.5 0 0 1 8.5 13h7a4.5 4.5 0 0 1 4.5 4.5V20"/><circle cx="12" cy="7" r="4"/></svg></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <span class="eyebrow" data-hero-eyebrow>KÜBİZMİN ZAMANSIZ DİLİ</span>
+        <h1><span data-hero-a>Modern</span><em data-hero-b>Kübist Yaşam</em></h1>
+        <p data-hero-subtitle>Geometrinin, ışığın ve duygunun parçalarını yeniden kuran özgün eserler. ZehrArt, kübist bakışı çağdaş yaşamın içine taşır.</p>
+        <div class="hero-actions">
+          <a class="btn btn-fill signature-link" href="#works" data-hero-cta>Koleksiyonu Keşfet <b>↗</b></a>
+          <a class="text-link signature-link" href="#artist" data-hero-secondary>Sanatçının Dünyasına Gir <b>↓</b></a>
+        </div>
+        <div class="hero-signature"><span>01</span><i></i><small>ART / FORM / LIFE</small></div>
+      </div>
+
+      <div class="hero-stage reveal" id="heroStage">
+        <div class="stage-glow" aria-hidden="true"></div>
+        <div class="hero-scene" data-depth=".32"><img id="heroImage" src="assets/hero-scene.webp" alt="ZehrArt modern kübist yaşam sahnesi"></div>
+        <div class="facet f1" data-depth="1.05"></div><div class="facet f2" data-depth=".75"></div><div class="facet f3" data-depth="1.25"></div>
+        <div class="hero-work-card"><small>SELECTED WORK / 01</small><strong id="heroWorkTitle">Yüzleşme</strong><span id="heroWorkMeta">2026 · 120 × 100 cm</span></div>
+      </div>
+      <div class="hero-scroll"><span>SCROLL</span><i></i></div>
+    </section>
+
+    <section class="intro-strip reveal">
+      <div><b id="metricWorks">06</b><span>ÖZGÜN ESER</span></div>
+      <div><b id="metricCollections">05</b><span>KOLEKSİYON</span></div>
+      <blockquote data-manifesto>Gerçeklik tek bir açıdan ibaret değildir.</blockquote>
+      <div class="strip-word">ZEHR / ART</div>
+    </section>
+
+    <section class="section works" id="works">
+      <header class="section-head reveal"><div><span class="eyebrow">CURATED / 02</span><h2>Seçilmiş <em>eserler.</em></h2></div><div class="filters" id="filters"><button class="active" data-filter="all">Tümü</button><button data-filter="available">Mevcut</button><button data-filter="sold">Özel Koleksiyonda</button></div></header>
+      <div class="work-grid" id="workGrid"></div>
+      <div class="works-foot reveal"><span>Her eser tekil bir kompozisyon ve özgün bir yüzeydir.</span><button class="link-button" data-inquiry-general>Koleksiyon hakkında bilgi alın ↗</button></div>
+    </section>
+
+    <section class="atelier" id="atelier">
+      <div class="atelier-copy reveal"><span class="eyebrow" data-atelier-eyebrow>ATÖLYEDEN</span><h2 data-atelier-title>Sanatın doğduğu yere yaklaşın.</h2><p data-atelier-text>Bir eser bitmiş hâliyle başlamaz.</p><div class="atelier-index"><span>TRACE</span><span>PIGMENT</span><span>SURFACE</span></div></div>
+      <div class="atelier-cards" id="atelierCards"></div>
+    </section>
+
+    <section class="section artist" id="artist">
+      <div class="artist-visual reveal" id="artistVisual"><img id="artistImage" src="assets/artist-zehrart.webp" alt="ZehrArt sanatçısı"><div class="artist-facet af1"></div><div class="artist-facet af2"></div><div class="artist-facet af3"></div><span class="artist-stamp">ARTIST / ZEHRART / 2026</span></div>
+      <div class="artist-copy reveal"><span class="eyebrow" data-artist-eyebrow>SANATÇININ VİZYONU</span><h2 data-artist-title>Biçimlerin ardındaki gerçeği arıyorum.</h2><p data-artist-text>Kübizmin çok yönlü diliyle yaşamın farklı yüzlerini aynı yüzeyde buluşturuyorum.</p><blockquote data-artist-quote>“Gerçeklik tek bir açıdan ibaret değildir.”</blockquote><div class="signature" data-artist-signature>ZehrArt</div><button class="btn btn-outline" data-inquiry-general>Sanatçıyla İletişime Geç <b>↗</b></button></div>
+      <div class="artist-ghost" aria-hidden="true">ZEHRA</div>
+    </section>
+
+    <section class="section collections" id="collections">
+      <header class="section-head reveal"><div><span class="eyebrow">CURATED / 03</span><h2>Koleksiyonlar</h2></div><p>Her seri aynı dünyanın başka bir yüzünü taşır. Kartlara dokunarak koleksiyon hikâyelerini keşfedin.</p></header>
+      <div class="collection-grid" id="collectionGrid"></div>
+    </section>
+
+    <section class="section immersive" id="immersive">
+      <div class="immersive-copy reveal"><span class="eyebrow" data-immersive-eyebrow>INSIDE THE WORK</span><h2 data-immersive-title>Aynı yüzey. Birden fazla gerçeklik.</h2><p data-immersive-text>Kübist kompozisyon tek bir bakışa teslim olmaz. Detay görünümünde eseri %300’e kadar büyütün.</p><button class="btn btn-outline" id="immersiveOpen">İlk Eseri Yakından İncele <b>↗</b></button></div>
+      <div class="depth-art reveal" id="depthArt"><div class="depth-image d1"><img src="assets/art-01.webp" alt="Yüzleşme eseri"></div><div class="depth-image d2"><img src="assets/art-01.webp" alt=""></div><div class="depth-image d3"><img src="assets/art-01.webp" alt=""></div><div class="depth-frame"></div></div>
+    </section>
+
+    <section class="collector" id="collector">
+      <div class="collector-room room-mini room-loft reveal" aria-hidden="true"><div class="mini-wall"><div class="mini-art"><img src="assets/art-03.webp" alt=""></div><div class="mini-console"></div><div class="mini-sofa"></div></div></div>
+      <div class="collector-copy reveal"><span class="eyebrow" data-collector-eyebrow>PRIVATE VIEWING / COLLECTOR</span><h2 data-collector-title>Eseri yalnızca satın almayın. Onunla yaşayacağınız yeri birlikte düşünelim.</h2><p data-collector-text>Ölçü, ışık ve mekân dengesi için birebir danışmanlık.</p><button class="btn btn-fill" data-inquiry-general data-collector-cta>Koleksiyon Danışmanı ile Görüş <b>↗</b></button></div>
+    </section>
+
+    <section class="section exhibitions" id="exhibitions">
+      <header class="section-head reveal"><div><span class="eyebrow">CALENDAR / 05</span><h2>Sergiler & <em>buluşmalar.</em></h2></div><p>ZehrArt dünyasını ekranda değil, yüzeyin karşısında deneyimleyin.</p></header>
+      <div class="exhibition-list" id="exhibitionList"></div>
+    </section>
+
+    <section class="section press" id="press">
+      <header class="section-head reveal"><div><span class="eyebrow">EDITORIAL / 06</span><h2>Basın & <em>notlar.</em></h2></div><p>Röportajlar, küratöryel metinler ve stüdyo notları için yaşayan bir arşiv.</p></header>
+      <div class="press-grid" id="pressGrid"></div>
+    </section>
+
+    <section class="services"><div class="service-grid" id="serviceGrid"></div></section>
+
+    <section class="manifesto reveal"><div class="manifesto-facet mf1"></div><div class="manifesto-facet mf2"></div><small>ZEHRART / MANIFESTO</small><p>Reality has <em>more than one face.</em></p><span>GERÇEKLİĞİ TEK AÇIDAN GÖRMEYENLER İÇİN.</span></section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy reveal"><span class="eyebrow">COLLECT / CONNECT</span><h2>Bir eser size<br><em>bakmaya başladığında,</em><br>konuşalım.</h2><p>Satın alma, özel sipariş, sergi ve koleksiyoner görüşmeleri için.</p></div>
+      <div class="contact-card reveal"><small>CONTACT</small><a class="contact-mail" id="contactMail" href="mailto:hello@zehrart.com">hello@zehrart.com <span>↗</span></a><a class="contact-phone" id="contactPhone" href="#">+90 555 000 00 00</a><span id="contactCity">İstanbul / Türkiye</span><button class="btn btn-fill inquiry-wide" data-inquiry-general>Eser / Koleksiyon Hakkında Bilgi Al <b>↗</b></button><form id="newsletter"><label>Yeni eserlerden ilk siz haberdar olun.</label><div><input type="email" id="newsletterEmail" placeholder="E-posta adresiniz" required><button>ABONE OL ↗</button></div><small id="newsletterStatus"></small></form></div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-brand"><a class="brand" href="#top"><strong data-brand>ZehrArt</strong><small data-tagline>MODERN CUBIST LIVING</small></a><p>Sanatı yaşam alanına değil, yaşamın kendisine yerleştiriyoruz.</p></div><div class="footer-links"><a href="#works">Eserler</a><a href="#atelier">Atölye</a><a href="#artist">Sanatçı</a><a href="#collections">Koleksiyonlar</a><a href="#exhibitions">Sergiler</a></div><div class="footer-links"><a id="instagramLink" href="#">Instagram ↗</a><a id="pinterestLink" href="#">Pinterest ↗</a><a id="behanceLink" href="#">Behance ↗</a><a href="admin/">Yönetim Paneli ↗</a></div><div class="footer-bottom"><span>© <b id="year"></b> ZEHRART. TÜM HAKLARI SAKLIDIR.</span><span>MODERN CUBIST LIVING / ISTANBUL</span></div></footer>
+
+  <button class="concierge" id="concierge" data-inquiry-general><span>PRIVATE VIEWING</span><b>◇</b></button>
+
+  <!-- ART EXPERIENCE -->
+  <div class="art-modal" id="artModal" aria-hidden="true">
+    <button class="modal-bg" id="modalBg" aria-label="Kapat"></button><button class="modal-close" id="modalClose" aria-label="Kapat">×</button>
+    <section class="modal-visual" id="modalVisual">
+      <div class="viewer-toolbar"><button id="zoomToggle">YAKINDAN İNCELE</button><div class="zoom-controls" id="zoomControls"><button id="zoomMinus">−</button><input id="zoomRange" type="range" min="100" max="300" step="10" value="100"><button id="zoomPlus">+</button><span id="zoomValue">100%</span><button id="zoomReset">SIFIRLA</button></div></div>
+      <div class="zoom-stage" id="zoomStage"><img id="modalImage" alt=""></div>
+      <div class="modal-nav"><button id="prevArt">← ÖNCEKİ</button><span>SCROLL / DRAG TO INSPECT</span><button id="nextArt">SONRAKİ →</button></div>
+    </section>
+    <aside class="modal-info">
+      <span class="eyebrow" id="modalCollection"></span><h2 id="modalTitle"></h2><p class="modal-meta" id="modalMeta"></p><p id="modalDescription"></p>
+      <div class="story-block"><small>ESER HİKÂYESİ</small><p id="modalStory"></p></div><div class="artist-note"><small>SANATÇI NOTU</small><p id="modalArtistNote"></p></div>
+      <div class="modal-detail-grid" id="modalDetails"></div>
+      <strong id="modalPrice"></strong><span class="modal-state" id="modalState"></span>
+      <div class="modal-actions"><button class="btn btn-fill" id="roomOpen">Mekânda Gör <b>↗</b></button><button class="btn btn-outline" id="modalAction">Eser Hakkında Bilgi Al <b>↗</b></button></div>
+    </aside>
+  </div>
+
+  <!-- ROOM VISUALIZER -->
+  <div class="room-modal" id="roomModal" aria-hidden="true">
+    <button class="room-bg" id="roomBg" aria-label="Kapat"></button>
+    <div class="room-shell"><header><div><span class="eyebrow">VIEW IN SPACE</span><h2>Mekânda Gör</h2></div><button id="roomClose">×</button></header><div class="room-tabs"><button class="active" data-room="loft">Koyu Loft</button><button data-room="gallery">Açık Galeri</button><button data-room="concrete">Modern Beton</button></div>
+      <div class="room room-loft" id="roomScene"><div class="room-art" id="roomArt"><img id="roomArtImage" alt=""><span id="roomArtLabel"></span></div><div class="room-light"></div><div class="room-console"></div><div class="room-sofa"></div><div class="room-floor"></div><div class="measure" id="roomMeasure"></div></div>
+      <footer><div><strong id="roomTitle"></strong><span id="roomMeta"></span></div><button class="btn btn-fill" id="roomInquiry">Bu Eser İçin Görüşme Talep Et <b>↗</b></button></footer>
+    </div>
+  </div>
+
+  <!-- COLLECTION STORY -->
+  <div class="story-modal" id="storyModal" aria-hidden="true"><button class="story-bg" id="storyBg" aria-label="Kapat"></button><div class="story-shell"><button class="story-close" id="storyClose">×</button><div class="story-image"><img id="storyImage" alt=""></div><div class="story-copy"><span class="eyebrow">COLLECTION STORY</span><h2 id="storyName"></h2><h3 id="storySubtitle"></h3><p id="storyManifesto"></p><button class="btn btn-outline" id="storyWorks">Bu Koleksiyondaki Eserler <b>↗</b></button></div></div></div>
+
+  <!-- INQUIRY -->
+  <div class="inquiry-modal" id="inquiryModal" aria-hidden="true"><button class="inquiry-bg" id="inquiryBg" aria-label="Kapat"></button><form class="inquiry-card" id="inquiryForm"><button class="inquiry-close" id="inquiryClose" type="button">×</button><span class="eyebrow">PRIVATE INQUIRY</span><h2>Bir görüşme başlatalım.</h2><p id="inquiryContext">Eser, özel sipariş veya koleksiyon danışmanlığı için bilgilerinizi bırakın.</p><input type="hidden" id="inquiryWorkId"><div class="inquiry-grid"><label>Ad Soyad<input id="inquiryName" required></label><label>E-posta<input id="inquiryEmail" type="email" required></label><label>Telefon<input id="inquiryPhone"></label><label>Konu<select id="inquiryType"><option>Eser hakkında bilgi</option><option>Koleksiyon danışmanlığı</option><option>Özel sipariş</option><option>Sergi / iş birliği</option></select></label><label class="wide">Mesaj<textarea id="inquiryMessage" required placeholder="Size nasıl yardımcı olabiliriz?"></textarea></label></div><button class="btn btn-fill inquiry-submit">Talebi Gönder <b>↗</b></button><small id="inquiryStatus"></small></form></div>
+
+  <!-- SEARCH -->
+  <div class="search" id="search" aria-hidden="true"><button class="search-bg" id="searchBg" aria-label="Kapat"></button><div class="search-panel"><div class="search-head"><span>ESER ARA</span><button id="searchClose">×</button></div><input id="searchInput" type="search" placeholder="İsim, koleksiyon, yıl..." autocomplete="off"><div id="searchResults"></div></div></div>
+
+  <script src="data/fallback-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

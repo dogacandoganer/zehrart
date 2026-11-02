@@ -1,179 +1,114 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-motion="on">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#080706">
-  <meta name="description" content="ZehrArt — modern kübist sanat, özgün eserler ve koleksiyoner deneyimi.">
-  <meta property="og:title" content="ZehrArt — Modern Cubist Living">
-  <meta property="og:description" content="Gerçeklik tek bir açıdan ibaret değildir.">
-  <title>ZehrArt — Modern Cubist Living</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23080706'/><path d='M8 49 30 8l12 24 14-13v30H8z' fill='%23b86a32'/><path d='M19 49 42 15 56 49z' fill='%23edd1aa' fill-opacity='.7'/></svg>">
-  <link rel="stylesheet" href="styles.css">
-  <noscript><style>#intro{display:none!important}</style></noscript>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ZehrArt — Zehra Arıoğlu</title>
+  <meta name="description" content="Zehra Arıoğlu’nun insanın iç dünyası, bağ kurma biçimleri ve ruhsal süreçler çevresinde gelişen çağdaş resim çalışmaları.">
+  <meta name="theme-color" content="#0B0B0D">
+  <meta property="og:title" content="ZehrArt — Zehra Arıoğlu">
+  <meta property="og:description" content="Görünenin ardındaki katmanlara doğru.">
+  <meta property="og:image" content="assets/images/sangha.png">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="preload" href="assets/fonts/cormorant.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="icon" type="image/svg+xml" href="assets/images/zehrart-monogram.svg">
+  <link rel="stylesheet" href="assets/css/reference-layout.css?v=5">
+  <link rel="stylesheet" href="assets/css/cinematic.css?v=2">
+  <link rel="stylesheet" href="assets/css/gallery-refinement.css?v=1">
+  <link rel="stylesheet" href="assets/css/social-icons.css?v=2">
 </head>
 <body>
-  <div class="signature-transition" id="signatureTransition" aria-hidden="true"><i></i><i></i><i></i></div>
+<a class="skip-link" href="#icerik">İçeriğe geç</a>
+<header class="site-header" data-header>
+  <a class="brand" href="#ana-sayfa" aria-label="ZehrArt ana sayfa"><img class="brand-monogram" src="assets/images/zehrart-monogram.svg" alt="" width="64" height="58"><strong><b class="brand-name">Zehra Arıoğlu</b><small>ÇAĞDAŞ KÜBİST SANAT</small></strong></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b>Menü</b></button>
+  <nav id="site-nav" aria-label="Ana menü">
+    <a href="#ana-sayfa" aria-current="page">Ana Sayfa</a><a href="#eserler">Eserler</a><a href="#koleksiyonlar">Koleksiyonlar</a><a href="#sanatci">Sanatçı</a><a href="#iletisim">İletişim</a>
+  </nav>
+  <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false">Hareketi duraklat</button>
+</header>
 
-  <div class="intro" id="intro" aria-hidden="true">
-    <div class="intro-geometry" aria-hidden="true"><i></i><i></i><i></i></div>
-    <div class="intro-mark">
-      <div class="intro-name"><span>Zehr</span><em>Art</em></div>
-      <div class="intro-rule"></div>
-      <small id="introLine">REALITY HAS MORE THAN ONE FACE</small>
-    </div>
-    <button class="intro-skip" id="introSkip" type="button">GEÇ ↗</button>
+<main id="icerik">
+<section class="hero" id="ana-sayfa">
+  <div class="hero-visual"><img class="hero-scene" src="assets/images/cubist-hero-natural-v4.png" alt="Zehra Arıoğlu’nun portresi; altın, petrol mavisi ve kızıl kübist yüzlerle bütünleşen kompozisyon" fetchpriority="high" width="2172" height="724"></div>
+  <div class="social-rail" aria-label="Sosyal bağlantılar"><a href="https://www.instagram.com/zehrar_art" target="_blank" rel="noopener" aria-label="Instagram"><img class="social-icon" src="assets/images/social-instagram-cubist.svg" alt="" width="48" height="48"><span class="social-label" aria-hidden="true">Instagram</span></a><a href="mailto:ariogluzehra@gmail.com" aria-label="E-posta"><img class="social-icon" src="assets/images/social-email-cubist.svg" alt="" width="48" height="48"><span class="social-label" aria-hidden="true">E-posta</span></a><i aria-hidden="true"></i></div>
+  <div class="hero-copy">
+    <p class="eyebrow">Z E H R A R T</p>
+    <h1><span>Zehra</span><span>Arıoğlu</span></h1>
+    <p class="hero-subtitle">Çağdaş Kübist Sanat</p>
+    <div class="hero-axiom" aria-hidden="true"><b>01</b><span>BAKIŞ<br>AÇISI</span></div>
+    <p class="hero-lead" data-cms-text="heroLead">Bir görüntünün ardında başka anlamlar, bir anın ardında başka hikâyeler olduğuna inanıyorum.</p>
+    <div class="hero-actions"><a class="button gold" href="#eserler">Eserleri keşfet <span>⟶</span></a><a class="button outline" href="#manifesto-tam">Manifesto’yu oku <span>▷</span></a></div>
   </div>
+  <svg class="wire-face" viewBox="0 0 220 310" aria-hidden="true"><path d="M62 15 161 34l33 68-19 99-54 83-57-44-35-103Z"/><path d="m62 15 31 65-44 53 64 19-49 88m29-160 68-46-16 82-32 36 62 49m-112-70 38 3 14-24m-6 97 39 5-26 26"/><circle cx="103" cy="121" r="4"/></svg>
+  <div class="slide-rail" aria-hidden="true"><b>01</b><span>02</span><span>03</span><span>04</span><i></i></div>
+  <a class="scroll-cue" href="#eserler">Kaydır <i></i></a>
+</section>
 
-  <div class="grain" aria-hidden="true"></div>
-  <div class="ambient" id="ambient" aria-hidden="true"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <header class="header" id="header">
-    <a class="brand" href="#top" aria-label="ZehrArt ana sayfa">
-      <strong data-brand>ZehrArt</strong>
-      <small data-tagline>MODERN CUBIST LIVING</small>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false"><i></i><i></i></button>
-    <nav class="nav" id="nav">
-      <a href="#top" class="active">Ana Sayfa</a>
-      <a href="#works">Eserler</a>
-      <a href="#atelier">Atölye</a>
-      <a href="#artist">Sanatçı</a>
-      <a href="#collections">Koleksiyonlar</a>
-      <a href="#exhibitions">Sergiler</a>
-      <a href="#contact">İletişim</a>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn" id="searchOpen" aria-label="Eser ara"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></svg></button>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-lines" aria-hidden="true"></div>
-      <div class="hero-copy reveal">
-        <span class="eyebrow" data-hero-eyebrow>KÜBİZMİN ZAMANSIZ DİLİ</span>
-        <h1><span data-hero-a>Modern</span><em data-hero-b>Kübist Yaşam</em></h1>
-        <p data-hero-subtitle>Geometrinin, ışığın ve duygunun parçalarını yeniden kuran özgün eserler. ZehrArt, kübist bakışı çağdaş yaşamın içine taşır.</p>
-        <div class="hero-actions">
-          <a class="btn btn-fill signature-link" href="#works" data-hero-cta>Koleksiyonu Keşfet <b>↗</b></a>
-          <a class="text-link signature-link" href="#artist" data-hero-secondary>Sanatçının Dünyasına Gir <b>↓</b></a>
-        </div>
-        <div class="hero-signature"><span>01</span><i></i><small>ART / FORM / LIFE</small></div>
-      </div>
-
-      <div class="hero-stage reveal" id="heroStage">
-        <div class="stage-glow" aria-hidden="true"></div>
-        <div class="hero-scene" data-depth=".32"><img id="heroImage" src="assets/hero-scene.webp" alt="ZehrArt modern kübist yaşam sahnesi"></div>
-        <div class="facet f1" data-depth="1.05"></div><div class="facet f2" data-depth=".75"></div><div class="facet f3" data-depth="1.25"></div>
-        <div class="hero-work-card"><small>SELECTED WORK / 01</small><strong id="heroWorkTitle">Yüzleşme</strong><span id="heroWorkMeta">2026 · 120 × 100 cm</span></div>
-      </div>
-      <div class="hero-scroll"><span>SCROLL</span><i></i></div>
-    </section>
-
-    <section class="intro-strip reveal">
-      <div><b id="metricWorks">06</b><span>ÖZGÜN ESER</span></div>
-      <div><b id="metricCollections">05</b><span>KOLEKSİYON</span></div>
-      <blockquote data-manifesto>Gerçeklik tek bir açıdan ibaret değildir.</blockquote>
-      <div class="strip-word">ZEHR / ART</div>
-    </section>
-
-    <section class="section works" id="works">
-      <header class="section-head reveal"><div><span class="eyebrow">CURATED / 02</span><h2>Seçilmiş <em>eserler.</em></h2></div><div class="filters" id="filters"><button class="active" data-filter="all">Tümü</button><button data-filter="available">Mevcut</button><button data-filter="sold">Özel Koleksiyonda</button></div></header>
-      <div class="work-grid" id="workGrid"></div>
-      <div class="works-foot reveal"><span>Her eser tekil bir kompozisyon ve özgün bir yüzeydir.</span><button class="link-button" data-inquiry-general>Koleksiyon hakkında bilgi alın ↗</button></div>
-    </section>
-
-    <section class="atelier" id="atelier">
-      <div class="atelier-copy reveal"><span class="eyebrow" data-atelier-eyebrow>ATÖLYEDEN</span><h2 data-atelier-title>Sanatın doğduğu yere yaklaşın.</h2><p data-atelier-text>Bir eser bitmiş hâliyle başlamaz.</p><div class="atelier-index"><span>TRACE</span><span>PIGMENT</span><span>SURFACE</span></div></div>
-      <div class="atelier-cards" id="atelierCards"></div>
-    </section>
-
-    <section class="section artist" id="artist">
-      <div class="artist-visual reveal" id="artistVisual"><img id="artistImage" src="assets/artist-zehrart.webp" alt="ZehrArt sanatçısı"><div class="artist-facet af1"></div><div class="artist-facet af2"></div><div class="artist-facet af3"></div><span class="artist-stamp">ARTIST / ZEHRART / 2026</span></div>
-      <div class="artist-copy reveal"><span class="eyebrow" data-artist-eyebrow>SANATÇININ VİZYONU</span><h2 data-artist-title>Biçimlerin ardındaki gerçeği arıyorum.</h2><p data-artist-text>Kübizmin çok yönlü diliyle yaşamın farklı yüzlerini aynı yüzeyde buluşturuyorum.</p><blockquote data-artist-quote>“Gerçeklik tek bir açıdan ibaret değildir.”</blockquote><div class="signature" data-artist-signature>ZehrArt</div><button class="btn btn-outline" data-inquiry-general>Sanatçıyla İletişime Geç <b>↗</b></button></div>
-      <div class="artist-ghost" aria-hidden="true">ZEHRA</div>
-    </section>
-
-    <section class="section collections" id="collections">
-      <header class="section-head reveal"><div><span class="eyebrow">CURATED / 03</span><h2>Koleksiyonlar</h2></div><p>Her seri aynı dünyanın başka bir yüzünü taşır. Kartlara dokunarak koleksiyon hikâyelerini keşfedin.</p></header>
-      <div class="collection-grid" id="collectionGrid"></div>
-    </section>
-
-    <section class="section immersive" id="immersive">
-      <div class="immersive-copy reveal"><span class="eyebrow" data-immersive-eyebrow>INSIDE THE WORK</span><h2 data-immersive-title>Aynı yüzey. Birden fazla gerçeklik.</h2><p data-immersive-text>Kübist kompozisyon tek bir bakışa teslim olmaz. Detay görünümünde eseri %300’e kadar büyütün.</p><button class="btn btn-outline" id="immersiveOpen">İlk Eseri Yakından İncele <b>↗</b></button></div>
-      <div class="depth-art reveal" id="depthArt"><div class="depth-image d1"><img src="assets/art-01.webp" alt="Yüzleşme eseri"></div><div class="depth-image d2"><img src="assets/art-01.webp" alt=""></div><div class="depth-image d3"><img src="assets/art-01.webp" alt=""></div><div class="depth-frame"></div></div>
-    </section>
-
-    <section class="collector" id="collector">
-      <div class="collector-room room-mini room-loft reveal" aria-hidden="true"><div class="mini-wall"><div class="mini-art"><img src="assets/art-03.webp" alt=""></div><div class="mini-console"></div><div class="mini-sofa"></div></div></div>
-      <div class="collector-copy reveal"><span class="eyebrow" data-collector-eyebrow>PRIVATE VIEWING / COLLECTOR</span><h2 data-collector-title>Eseri yalnızca satın almayın. Onunla yaşayacağınız yeri birlikte düşünelim.</h2><p data-collector-text>Ölçü, ışık ve mekân dengesi için birebir danışmanlık.</p><button class="btn btn-fill" data-inquiry-general data-collector-cta>Koleksiyon Danışmanı ile Görüş <b>↗</b></button></div>
-    </section>
-
-    <section class="section exhibitions" id="exhibitions">
-      <header class="section-head reveal"><div><span class="eyebrow">CALENDAR / 05</span><h2>Sergiler & <em>buluşmalar.</em></h2></div><p>ZehrArt dünyasını ekranda değil, yüzeyin karşısında deneyimleyin.</p></header>
-      <div class="exhibition-list" id="exhibitionList"></div>
-    </section>
-
-    <section class="section press" id="press">
-      <header class="section-head reveal"><div><span class="eyebrow">EDITORIAL / 06</span><h2>Basın & <em>notlar.</em></h2></div><p>Röportajlar, küratöryel metinler ve stüdyo notları için yaşayan bir arşiv.</p></header>
-      <div class="press-grid" id="pressGrid"></div>
-    </section>
-
-    <section class="services"><div class="service-grid" id="serviceGrid"></div></section>
-
-    <section class="manifesto reveal"><div class="manifesto-facet mf1"></div><div class="manifesto-facet mf2"></div><small>ZEHRART / MANIFESTO</small><p>Reality has <em>more than one face.</em></p><span>GERÇEKLİĞİ TEK AÇIDAN GÖRMEYENLER İÇİN.</span></section>
-
-    <section class="section contact" id="contact">
-      <div class="contact-copy reveal"><span class="eyebrow">COLLECT / CONNECT</span><h2>Bir eser size<br><em>bakmaya başladığında,</em><br>konuşalım.</h2><p>Satın alma, özel sipariş, sergi ve koleksiyoner görüşmeleri için.</p></div>
-      <div class="contact-card reveal"><small>CONTACT</small><a class="contact-mail" id="contactMail" href="mailto:hello@zehrart.com">hello@zehrart.com <span>↗</span></a><a class="contact-phone" id="contactPhone" href="#">+90 555 000 00 00</a><span id="contactCity">İstanbul / Türkiye</span><button class="btn btn-fill inquiry-wide" data-inquiry-general>Eser / Koleksiyon Hakkında Bilgi Al <b>↗</b></button><form id="newsletter"><label>Yeni eserlerden ilk siz haberdar olun.</label><div><input type="email" id="newsletterEmail" placeholder="E-posta adresiniz" required><button>ABONE OL ↗</button></div><small id="newsletterStatus"></small></form></div>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="footer-brand"><a class="brand" href="#top"><strong data-brand>ZehrArt</strong><small data-tagline>MODERN CUBIST LIVING</small></a><p>Sanatı yaşam alanına değil, yaşamın kendisine yerleştiriyoruz.</p></div><div class="footer-links"><a href="#works">Eserler</a><a href="#atelier">Atölye</a><a href="#artist">Sanatçı</a><a href="#collections">Koleksiyonlar</a><a href="#exhibitions">Sergiler</a></div><div class="footer-links"><a id="instagramLink" href="#">Instagram ↗</a><a id="pinterestLink" href="#">Pinterest ↗</a><a id="behanceLink" href="#">Behance ↗</a></div><div class="footer-bottom"><span>© <b id="year"></b> ZEHRART. TÜM HAKLARI SAKLIDIR.</span><span>MODERN CUBIST LIVING / ISTANBUL</span></div></footer>
-
-  <button class="concierge" id="concierge" data-inquiry-general><span>PRIVATE VIEWING</span><b>◇</b></button>
-
-  <!-- ART EXPERIENCE -->
-  <div class="art-modal" id="artModal" aria-hidden="true">
-    <button class="modal-bg" id="modalBg" aria-label="Kapat"></button><button class="modal-close" id="modalClose" aria-label="Kapat">×</button>
-    <section class="modal-visual" id="modalVisual">
-      <div class="viewer-toolbar"><button id="zoomToggle">YAKINDAN İNCELE</button><div class="zoom-controls" id="zoomControls"><button id="zoomMinus">−</button><input id="zoomRange" type="range" min="100" max="300" step="10" value="100"><button id="zoomPlus">+</button><span id="zoomValue">100%</span><button id="zoomReset">SIFIRLA</button></div></div>
-      <div class="zoom-stage" id="zoomStage"><img id="modalImage" alt=""></div>
-      <div class="modal-nav"><button id="prevArt">← ÖNCEKİ</button><span>SCROLL / DRAG TO INSPECT</span><button id="nextArt">SONRAKİ →</button></div>
-    </section>
-    <aside class="modal-info">
-      <span class="eyebrow" id="modalCollection"></span><h2 id="modalTitle"></h2><p class="modal-meta" id="modalMeta"></p><p id="modalDescription"></p>
-      <div class="story-block"><small>ESER HİKÂYESİ</small><p id="modalStory"></p></div><div class="artist-note"><small>SANATÇI NOTU</small><p id="modalArtistNote"></p></div>
-      <div class="modal-detail-grid" id="modalDetails"></div>
-      <strong id="modalPrice"></strong><span class="modal-state" id="modalState"></span>
-      <div class="modal-actions"><button class="btn btn-fill" id="roomOpen">Mekânda Gör <b>↗</b></button><button class="btn btn-outline" id="modalAction">Eser Hakkında Bilgi Al <b>↗</b></button></div>
-    </aside>
+<section id="eserler" class="featured section-shell">
+  <div class="section-heading reveal">
+    <div class="featured-intro"><p class="eyebrow">Öne çıkan eserler</p><h2>Son Eserler</h2><p>Atölyeden yeni çıkan, koleksiyonun dikkat çeken eserleri.</p><a class="button outline" href="#koleksiyon-eserleri">Tüm eserleri gör →</a><span class="section-ghost" aria-hidden="true">ESER / 07</span></div>
+    <div class="gallery-controls"><button data-gallery-prev aria-label="Önceki eser">←</button><span data-gallery-count>01 / 07</span><button data-gallery-next aria-label="Sonraki eser">→</button></div>
   </div>
-
-  <!-- ROOM VISUALIZER -->
-  <div class="room-modal" id="roomModal" aria-hidden="true">
-    <button class="room-bg" id="roomBg" aria-label="Kapat"></button>
-    <div class="room-shell"><header><div><span class="eyebrow">VIEW IN SPACE</span><h2>Mekânda Gör</h2></div><button id="roomClose">×</button></header><div class="room-tabs"><button class="active" data-room="loft">Koyu Loft</button><button data-room="gallery">Açık Galeri</button><button data-room="concrete">Modern Beton</button></div>
-      <div class="room room-loft" id="roomScene"><div class="room-art" id="roomArt"><img id="roomArtImage" alt=""><span id="roomArtLabel"></span></div><div class="room-light"></div><div class="room-console"></div><div class="room-sofa"></div><div class="room-floor"></div><div class="measure" id="roomMeasure"></div></div>
-      <footer><div><strong id="roomTitle"></strong><span id="roomMeta"></span></div><button class="btn btn-fill" id="roomInquiry">Bu Eser İçin Görüşme Talep Et <b>↗</b></button></footer>
-    </div>
+  <div class="art-track" data-gallery tabindex="0" aria-label="Eser galerisi">
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/sangha.png" data-title="SANGHA — Nepal, Budist Keşişler" data-meta="2023 · Yağlı boya · 70 × 100 cm"><img src="assets/images/sangha.png" alt="SANGHA — Nepal, Budist Keşişler adlı eser"><span class="art-index">01</span></button><div class="art-meta"><div><h3>SANGHA</h3><p>2023 · Yağlı boya</p></div><span class="status status-available">Satışta</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/spiritual-connection.jpg" data-title="Spiritual Connection" data-meta="2023 · Yağlı boya · Boyut teyidi bekliyor"><img src="assets/images/spiritual-connection.jpg" alt="Spiritual Connection adlı eser"><span class="art-index">02</span></button><div class="art-meta"><div><h3>Spiritual Connection</h3><p>2023 · Yağlı boya</p></div><span class="status status-private">Özel Koleksiyon</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/echo-iii.jpg" data-title="Echo III" data-meta="2023 · Yağlı boya · Boyut teyidi bekliyor"><img src="assets/images/echo-iii.jpg" alt="Echo III adlı eser"><span class="art-index">03</span></button><div class="art-meta"><div><h3>Echo III</h3><p>2023 · Yağlı boya</p></div><span class="status status-available">Satışta</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/lotus-council.png" data-title="The Lotus Council" data-meta="Yağlı boya · 60 × 100 cm"><img src="assets/images/lotus-council.png" alt="The Lotus Council adlı eser"><span class="art-index">04</span></button><div class="art-meta"><div><h3>The Lotus Council</h3><p>Yağlı boya · 60 × 100 cm</p></div><span class="status status-available">Satışta</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/under-eye-of-ra.png" data-title="Under The Eye Of RA" data-meta="2023 · Yağlı boya · 70 × 100 cm"><img src="assets/images/under-eye-of-ra.png" alt="Under The Eye Of RA adlı eser"><span class="art-index">05</span></button><div class="art-meta"><div><h3>Under The Eye Of RA</h3><p>2023 · Yağlı boya</p></div><span class="status status-available">Satışta</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/untitled-50x70-a.jpg" data-title="İsimsiz Çalışma I" data-meta="2023 · Yağlı boya · 50 × 70 cm"><img src="assets/images/untitled-50x70-a.jpg" alt="İsimsiz yağlı boya çalışma"><span class="art-index">06</span></button><div class="art-meta"><div><h3>İsimsiz Çalışma I</h3><p>2023 · Yağlı boya</p></div><span class="status status-private">Özel Koleksiyon</span></div></article>
+    <article class="art-card reveal"><button class="art-frame static-art" data-art-open data-src="assets/images/untitled-50x70-b.jpg" data-title="İsimsiz Çalışma II" data-meta="2023 · Yağlı boya · 50 × 70 cm"><img src="assets/images/untitled-50x70-b.jpg" alt="İsimsiz yağlı boya çalışma"><span class="art-index">07</span></button><div class="art-meta"><div><h3>İsimsiz Çalışma II</h3><p>2023 · Yağlı boya</p></div><span class="status status-private">Özel Koleksiyon</span></div></article>
   </div>
+</section>
 
-  <!-- COLLECTION STORY -->
-  <div class="story-modal" id="storyModal" aria-hidden="true"><button class="story-bg" id="storyBg" aria-label="Kapat"></button><div class="story-shell"><button class="story-close" id="storyClose">×</button><div class="story-image"><img id="storyImage" alt=""></div><div class="story-copy"><span class="eyebrow">COLLECTION STORY</span><h2 id="storyName"></h2><h3 id="storySubtitle"></h3><p id="storyManifesto"></p><button class="btn btn-outline" id="storyWorks">Bu Koleksiyondaki Eserler <b>↗</b></button></div></div></div>
+<section class="manifesto-home" id="manifesto">
+  <div class="manifesto-mark reveal" aria-hidden="true">M</div>
+  <div class="manifesto-ribbon" aria-hidden="true">PARÇA&nbsp;&nbsp;·&nbsp;&nbsp;AÇI&nbsp;&nbsp;·&nbsp;&nbsp;HAFIZA&nbsp;&nbsp;·&nbsp;&nbsp;DÖNÜŞÜM</div>
+  <div class="manifesto-copy reveal"><div class="manifesto-title"><p>Sanatsal Yaklaşım</p><h2>Manifesto</h2></div><p class="manifesto-excerpt" data-cms-text="manifesto">Gördüklerimi parçalarına ayırıyor, farklı açıları ve katmanları yeniden bir araya getiriyorum. Parçalanıyor. Çoğalıyor. Dönüşüyor.</p><a class="button outline" href="#manifesto-tam"><span>▷</span> Manifesto’yu keşfet</a></div>
+</section>
 
-  <!-- INQUIRY -->
-  <div class="inquiry-modal" id="inquiryModal" aria-hidden="true"><button class="inquiry-bg" id="inquiryBg" aria-label="Kapat"></button><form class="inquiry-card" id="inquiryForm"><button class="inquiry-close" id="inquiryClose" type="button">×</button><span class="eyebrow">PRIVATE INQUIRY</span><h2>Bir görüşme başlatalım.</h2><p id="inquiryContext">Eser, özel sipariş veya koleksiyon danışmanlığı için bilgilerinizi bırakın.</p><input type="hidden" id="inquiryWorkId"><div class="inquiry-grid"><label>Ad Soyad<input id="inquiryName" required></label><label>E-posta<input id="inquiryEmail" type="email" required></label><label>Telefon<input id="inquiryPhone"></label><label>Konu<select id="inquiryType"><option>Eser hakkında bilgi</option><option>Koleksiyon danışmanlığı</option><option>Özel sipariş</option><option>Sergi / iş birliği</option></select></label><label class="wide">Mesaj<textarea id="inquiryMessage" required placeholder="Size nasıl yardımcı olabiliriz?"></textarea></label></div><button class="btn btn-fill inquiry-submit">Talebi Gönder <b>↗</b></button><small id="inquiryStatus"></small></form></div>
+<section class="collection-preview section-shell" id="koleksiyonlar">
+  <div class="collection-panel reveal"><img src="assets/images/spiritual-connection.jpg" alt="Portfolyom koleksiyonundan Spiritual Connection" loading="lazy"><span><small>Seçili çalışmalar</small><strong>Portfolyom</strong><p>İnsanın iç dünyası, bağ kurma biçimleri ve ruhsal süreçler çevresinde gelişen seçili çalışmalar.</p><a class="text-link" href="#koleksiyon-eserleri">Koleksiyonu incele <span>→</span></a></span></div>
+  <div class="portfolio-heading" id="koleksiyon-eserleri"><p class="eyebrow">Eser arşivi</p><h2>Her parça, başka bir hikâye.</h2></div>
+  <div class="portfolio-grid" data-portfolio aria-label="Tüm eserler"></div>
+</section>
 
-  <!-- SEARCH -->
-  <div class="search" id="search" aria-hidden="true"><button class="search-bg" id="searchBg" aria-label="Kapat"></button><div class="search-panel"><div class="search-head"><span>ESER ARA</span><button id="searchClose">×</button></div><input id="searchInput" type="search" placeholder="İsim, koleksiyon, yıl..." autocomplete="off"><div id="searchResults"></div></div></div>
+<section class="artist-intro section-shell" id="sanatci">
+  <div class="artist-photo reveal"><img src="assets/images/artist-approved.png" alt="Zehra Arıoğlu’nun kübist portresi" loading="lazy"></div>
+  <div class="artist-copy reveal"><p class="eyebrow">Sanatçı</p><h2>İç dünyayı<br>görünür kılmak.</h2><p data-cms-text="biography">Zehra Arıoğlu, 1998 yılında Ankara’da doğdu. Hemşirelik eğitimiyle başlayan mesleki yolculuğu ona insan bedeni, kırılganlık ve iyileşme süreçleriyle doğrudan temas etme imkânı sundu. Yaklaşık beş yıldır profesyonel olarak resim yapan sanatçı, Ankara’da yaşamakta ve üretimlerine burada devam etmektedir.</p><a class="button outline" href="#biyografi">Biyografiyi oku</a></div>
+</section>
 
-  <script src="data/fallback-data.js"></script>
-  <script src="app.js"></script>
+<section class="manifesto-full section-shell" id="manifesto-tam">
+  <div><p class="eyebrow">Manifesto</p><h2>Tek bir açıdan<br>görülemeyenler.</h2></div>
+  <div class="rich-text"><p>Bazı şeyler tek bir açıdan görülemez. Benim için her şey bir bakış açısıyla başlıyor. Bir görüntünün ardında başka anlamlar, bir anın ardında başka hikâyeler olduğuna inanıyorum.</p><p>Bu yüzden gördüklerimi parçalarına ayırıyor, farklı açıları ve katmanları yeniden bir araya getiriyorum. Parçalanıyor. Çoğalıyor. Dönüşüyor.</p><p>Resimlerim bu katmanların arasında dolaşıyor; görünenden görünmeyene, bildiğimizden henüz keşfetmediğimize doğru ilerliyor. Ve sonunda, daha önce görmediğim başka bir gerçeklik ortaya çıkıyor.</p></div>
+</section>
+
+<section class="artist-page section-shell" id="biyografi">
+  <div class="artist-page-image reveal"><img src="assets/images/artist-candidate-a.jpg" alt="Zehra Arıoğlu portresi"></div>
+  <div class="artist-page-copy reveal"><p class="eyebrow">Biyografi</p><h2>Zehra<br>Arıoğlu</h2><div class="rich-text"><p>1998 yılında Ankara’da doğdu. Hemşirelik okulunu bitirerek başladığı mesleki yolculuk, ona insan bedenleriyle, kırılganlıkla ve iyileşme süreçleriyle doğrudan temas etme imkânı sundu.</p><p>Astroloji, bilinç ve bilinçaltı alanlarında üç yıl boyunca eğitim aldı. Zaman, sezgi, içsel dönüşüm ve duygusal hafıza kavramları üretimlerine kavramsal bir zemin kazandırdı.</p><p>Resim, onun için yalnızca bir anlatım aracı değil; bilinç ile bilinçaltı arasındaki geçiş alanıdır. Her çalışma, hissedilerek tamamlanan açık bir yapı olarak ele alınır.</p></div></div>
+</section>
+
+<section class="contact-page section-shell" id="iletisim">
+  <div><p class="eyebrow">İletişim</p><h2>Birlikte<br>bakalım.</h2><p>Eserleri yakından incelemek, ölçü ve mekân uyumu hakkında bilgi almak veya sanatçıyla özel görüşme yapmak için iletişime geçebilirsiniz.</p>
+    <ul class="contact-list"><li><span>E-posta</span><a data-cms-email href="mailto:ariogluzehra@gmail.com">ariogluzehra@gmail.com</a></li><li><span>Telefon</span><a data-cms-phone href="tel:+905322755120">+90 532 275 51 20</a></li><li><span>Instagram</span><a data-cms-instagram href="https://www.instagram.com/zehrar_art" target="_blank" rel="noopener">@zehrar_art ↗</a></li><li><span>Konum</span><span data-cms-text="location">Ankara / Çankaya</span></li></ul>
+  </div>
+  <div class="contact-form static-contact">
+    <p class="eyebrow">Eser hakkında bilgi</p><h3>Sanatla başlayan<br>bir sohbet.</h3><p>Bir eserin hikâyesi, özel gösterim veya koleksiyonunuz için sanatçıya doğrudan ulaşın.</p><a class="button gold" href="mailto:ariogluzehra@gmail.com?subject=ZehrArt%20eser%20bilgi%20talebi&body=Merhaba%20Zehra%20Hanım%2C%0A%0ABir%20eseriniz%20hakkında%20bilgi%20almak%20istiyorum.%0A">E-posta gönder</a><a class="button outline" href="tel:+905322755120">Telefonla ara</a>
+  </div>
+</section>
+
+<section class="inquiry-band"><p class="eyebrow">Özel gösterim</p><h2>Bir eserin mekânınızla<br>kuracağı bağı konuşalım.</h2><a class="button gold" href="mailto:ariogluzehra@gmail.com?subject=Özel%20gösterim%20talebi">İletişime geçin</a></section>
+</main>
+
+<footer class="site-footer"><div><a class="footer-mark" href="#ana-sayfa">ZA</a><p>Görünenin ardındaki katmanlara doğru.</p></div><div><span>İletişim</span><a href="mailto:ariogluzehra@gmail.com">ariogluzehra@gmail.com</a><a href="tel:+905322755120">+90 532 275 51 20</a></div><div><span>Takip</span><a href="https://www.instagram.com/zehrar_art" target="_blank" rel="noopener">Instagram ↗</a><a href="#gizlilik">Gizlilik bilgisi</a></div><p class="copyright">© <span data-year></span> ZehrArt / Zehra Arıoğlu</p></footer>
+
+<section id="gizlilik" class="static-privacy" aria-label="Gizlilik bilgisi"><p>Bu statik site çerez, takip kodu veya sunucu tarafında form kaydı kullanmaz. E-posta ve telefon bağlantıları cihazınızdaki ilgili uygulamayı açar.</p></section>
+
+<dialog class="lightbox static-lightbox" data-lightbox aria-label="Eseri yakından inceleyin">
+  <button data-lightbox-close aria-label="Kapat">×</button><img alt=""><div><span class="eyebrow">Yakından bakış</span><h3></h3><p></p><a class="button gold" href="mailto:ariogluzehra@gmail.com?subject=ZehrArt%20eser%20bilgi%20talebi">Bilgi alın</a><div class="lightbox-navigation"><button type="button" data-art-prev aria-label="Önceki eseri incele">←</button><span data-art-position></span><button type="button" data-art-next aria-label="Sonraki eseri incele">→</button></div><small>Yön tuşlarıyla keşfedin · Esc ile kapatın</small></div>
+</dialog>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/cinematic.js"></script>
 </body>
 </html>
+

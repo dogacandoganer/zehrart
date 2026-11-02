@@ -88,6 +88,7 @@
     items=[...button.closest('[data-gallery],[data-portfolio]').querySelectorAll('[data-art-open]')].filter(b=>!b.closest('[hidden]'));index=items.indexOf(button);fill(button);
     previousOverflow=document.body.style.overflow;document.body.classList.add('art-open');dialog.showModal();
     try{await image.decode();}catch{}
+    if(!dialog.open){busy=false;return;}
     const from=imageBounds(button.querySelector('img')),to=imageBounds(image);
     if(to.width&&from.width){const dx=from.left+from.width/2-to.left-to.width/2,dy=from.top+from.height/2-to.top-to.height/2;
       await animate(image,[{transform:`translate(${dx}px,${dy}px) scale(${from.width/to.width},${from.height/to.height})`,opacity:.65},{transform:'none',opacity:1}],{duration:650,easing:'cubic-bezier(.16,1,.3,1)'});
@@ -95,7 +96,7 @@
     busy=false;
   }
   async function close(){
-    if(!dialog.open||busy)return;busy=true;
+    if(!dialog.open)return;if(busy){dialog.close();busy=false;return;}busy=true;
     await animate(image,[{opacity:1,transform:'scale(1)'},{opacity:0,transform:'scale(.96)'}],{duration:220,easing:'ease-in'});
     dialog.close();busy=false;
   }

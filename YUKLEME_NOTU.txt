@@ -1,0 +1,3 @@
+Bu klasörün içindekileri GitHub deposunun köküne yükleyin. ZIP dosyasını doğrudan yüklemeyin.
+Site: https://dogacandoganer.github.io/zehrart/
+Yönetim ve PHP dosyaları içermez.
